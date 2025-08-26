@@ -1,0 +1,28 @@
+#!/bin/bash
+
+while true; do
+    echo "============================="
+    echo "      Inshackle Menu"
+    echo "============================="
+    echo "1) Test Option A"
+    echo "2) Test Option B"
+    echo "0) Exit"
+    echo "============================="
+    printf "Choose an option: "
+    read choice
+
+    if [ "$choice" = "1" ]; then
+        echo "You picked A"
+    elif [ "$choice" = "2" ]; then
+        echo "You picked B"
+    elif [ "$choice" = "0" ]; then
+        echo "Bye!"
+        exit 0
+    else
+        echo "Invalid option"
+    fi
+
+    echo
+    echo "Press Enter to continue..."
+    read
+done
